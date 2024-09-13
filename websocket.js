@@ -1,5 +1,5 @@
 const Websocket = require("ws");
-const wss = new Websocket.Server({ port: 8000 });
+const wss = new Websocket.Server({ port: process.env.WEB_SOCKET_PORT });
 const jwt = require("jsonwebtoken");
 
 const chatrooms = new Map();
