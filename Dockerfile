@@ -13,6 +13,7 @@ COPY . .
 
 # Expose the application port
 EXPOSE 3000
+EXPOSE 8000
 
 # Start the application
 CMD ["npm", "start"]
